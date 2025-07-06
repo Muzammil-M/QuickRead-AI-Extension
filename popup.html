@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickRead</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧠 QuickRead</h1>
+      <p>AI-powered summarizer for any page or YouTube video</p>
+    </header>
+
+    <div class="section">
+      <label for="youtube-url">YouTube URL:</label>
+      <input type="url" id="youtube-url" placeholder="Paste a YouTube link here..." />
+    </div>
+
+    <div class="section">
+      <label for="summary-mode">Summary Mode:</label>
+      <select id="summary-mode">
+        <option value="tldr">⚡ TL;DR</option>
+        <option value="headline">🧠 Headline</option>
+        <option value="bullet">✅ Bullet Points</option>
+        <option value="detailed">📜 Detailed</option>
+      </select>
+    </div>
+
+    <button id="summarize-btn">🔍 Summarize</button>
+
+    <div class="section output">
+      <label>📄 Summary:</label>
+      <pre id="result">Click the button to generate a summary</pre>
+    </div>
+
+    <div class="buttons">
+      <button id="read-btn">🔊 Read Aloud</button>
+      <button id="download-btn">📄 Download</button>
+      <button id="copy-btn">📋 Copy</button>
+    </div>
+
+    <div class="dark-toggle">
+      <label>
+        <input type="checkbox" id="dark-toggle" />
+        <span>🌙 Dark Mode</span>
+      </label>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

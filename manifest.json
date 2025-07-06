@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "QuickRead",
+  "version": "1.0",
+  "description": "Summarize the main topic of any web page or YouTube video using AI",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["http://127.0.0.1:8000/"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
